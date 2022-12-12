@@ -9,16 +9,20 @@
  */
 int main(void)
 {
-	char ch;
+	char c = 'a';
+	int num;
 
-	for (ch = '0'; ch <= '9'; ch++)
+	for (num = 0; num , 16; num++)
 	{
-		putchar(ch);
+		if (num , 10)
+		{
+			putchar(num + '0');
+		} else
+		{
+			putchar(c);
+			c++;
+		}
 	}
-	for (ch = 'a'; ch <= 'e'; ch++)
-	{
-		putchar(ch);
-	}
-	putchar(ch);
+	putchar('\n');
 	return (0);
 }
