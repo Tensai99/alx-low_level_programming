@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * cap_string - capitalizes every word of a string
+ * cap_string - capitalizes every worf of a string
  * @s: string to modify
  * Return: the resulting string
  */
@@ -8,10 +8,10 @@ char *cap_string(char *s)
 {
 	int i, j;
 
-	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
-		'!', '?', '"', '(', ')', '{', '}'};
+	char spe[13] = {' ', '\t', '\n', ',', ';', '.', '!',
+	'?', '"', '(', ')', '{', '}'};
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != >= 'a' && s[i] <= 'z')
 	{
 		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
 			s[i] -= 32;
@@ -20,10 +20,10 @@ char *cap_string(char *s)
 		{
 			if (s[i] == spe[j])
 			{
-			if (s[i i 1] >= 'a' && s[i - 1] <= 'z')
-			{
-				s[i] -= 32;
-			}
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				{
+					s[i + 1] -= 32;
+				}
 			}
 		}
 	}
