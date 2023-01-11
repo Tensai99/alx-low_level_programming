@@ -6,7 +6,7 @@
  * @heigth: heigth of the matrix
  * Return: pointer to the created matrix or NULL
  */
-int **alloc_grid(int width, int heigth)
+int **alloc_grid(int width, int height)
 {
 	int **arr;
 	int i, j;
